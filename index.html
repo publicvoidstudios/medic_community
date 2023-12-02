@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сообщество медиков</title>
+    <link rel="stylesheet" href="./test.css">
+    <script src="./test.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./logo.jpg" alt="">
+        </div>
+        <nav class="navigation-panel">
+            <button class="navigation-button" onclick="menuToggle('section-video')">Видео</button>
+            <button class="navigation-button" onclick="menuToggle('section-feed')">Записи</button>
+        </nav>
+        <div class="user-actions">
+            <p class="user-name">Имя пользователя</p>
+            <button class="login-logout-button">Выйти</button>
+        </div>
+    </header>
+    <main>
+        <div class="main-section" id="section-video">
+            <div class="video-section">
+                <div class="video-and-name-container">
+                    <div class="video">
+                        <iframe
+                                class="current-video"
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/A3DUCvCyrgI?si=Uqad5q-RbEgzIrZq"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                        >
+                        </iframe>
+
+                    </div>
+                    <div class="video-name-description">
+                        <h2 class="video-name">Name of currently displayed video</h2>
+                        <p class="video-description">Description of current video. This paragraph may contain many letters and may be really long one. I'm not kidding. This paragraph may contain really many letters and may be really long one.</p>
+                    </div>
+                </div>                
+                <div class="comments">
+                    <div class="comment-add">
+                        <img src="./avatar_def.png" alt="User Icon" class="current-user-icon">
+                        <label>
+                            <textarea cols="40" rows="5" placeholder="Напишите ваш комментарий..."></textarea>
+                        </label>
+                        <input type="submit" content="POST">
+                    </div>
+                    <div class="comments-list">
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="single-comment-container hidden">
+                            <img src="./avatar_def.png" class="user-icon" alt="">
+                            <div class="user-name-text-in-comment">
+                                <h4 class="user-name-in-comment">User Name in comment</h4>
+                                <p class="text-in-comment">
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                    User's comment. Which can also be very very long one.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="watch-next-section">
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+                <div class="watch-next-element">
+                    <img
+                            class="watch-next-video"
+                            src="https://i3.ytimg.com/vi/jhBz1UdHU3g/maxresdefault.jpg"
+                            alt="Смотреть видео"
+                    >
+                    <div class="watch-next-element-name-description-container">
+                        <span class="watch-next-element-name">Name of video to watch next</span>
+                        <span class="watch-next-element-description">Description of video to watch next. May be a really long paragraph.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-section hidden" id="section-feed">
+            <div class="article-container">
+                <div class="article">
+                    <h3 class="article-name">Article name</h3>
+                    <p class="article-date">Date: 27.11.23</p>
+                    <p class="article-text-content" id="art_0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button
+                        class="article-expand-button"
+                        onclick="expand('art_0','art_button_0')"
+                        id="art_button_0">Expand
+                    </button>
+                </div>
+                <div class="article">
+                    <h3 class="article-name">Article name</h3>
+                    <p class="article-date">Date: 27.11.23</p>
+                    <p class="article-text-content" id="art_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button
+                            class="article-expand-button"
+                            onclick="expand('art_1','art_button_1')"
+                            id="art_button_1">Expand
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

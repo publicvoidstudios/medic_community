@@ -1,0 +1,415 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    transition: all 0.2s ease-out;
+}
+
+body{
+    background-image: url('./background.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #154c79;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', 'Roboto Light', sans-serif;
+    border: 0 solid white;
+    border-right-width: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    /*background-color: #00c800;*/
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.main-section{
+    display: flex;
+}
+
+.article-container{
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    
+    .article{
+        margin: 10px 10px 0 10px;
+        padding: 10px;
+        border-left: 5px;
+        border-right: 5px;
+        border-top: 0;
+        border-bottom: 0;
+        border-style: solid;
+        border-color: #154c79;
+        border-radius: 20px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'Roboto', 'Roboto Light', sans-serif;
+
+        .article-name{
+            margin: 0;
+            padding: 5px;
+            align-self: flex-start;
+        }
+
+        .article-date{
+            align-self: flex-end;
+            margin: 5px 0;
+            padding: 0;
+        }
+
+        .article-text-content{
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        & p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: auto;
+        }
+        
+        .article-expand-button{
+            align-self: flex-end;
+            border-radius: 10px;
+            background-color: transparent;
+            border: none;
+            text-decoration: underline;
+        }
+        .article-expand-button:hover{
+            color: #222;
+            background-color: #154c7980;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+
+.logo{
+    margin: 5px 0 5px 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    & img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+.navigation-panel{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation-button{
+    margin-bottom: -1px;
+    width: 150px;
+    border: 1px solid white;
+    border-left: 0;    
+    border-right: 0;
+    height: 60px;
+    background-color: #0001;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.navigation-button:hover{
+    background-color: #0008;
+    padding-left: 40px;
+}
+
+.user-actions{
+    margin: 0 0 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60px;
+    & .login-logout-button{
+        margin: 0;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 20px;
+        height: 40px;
+        font-family: 'Roboto', 'Roboto Light', sans-serif;
+        color: #fff;
+        font-size: 15px;
+    }
+    & .user-name{
+        color: #fff;
+        margin-right: 10px;
+        max-width: 100px;
+        max-height: 40px;
+        text-align: center;
+        font-family: 'Roboto', 'Roboto Light', sans-serif;        
+    }
+}
+
+/* Styles for list of videos */
+/*Section styles*/
+.watch-next-section{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    overflow: auto;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 6;
+    max-width: 25%;
+    margin-top: 5px;
+}
+/* Style for container of watch next video, name, description */
+.watch-next-element{
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 0;
+    padding-bottom: 5px;
+    width: 95%;
+}
+/* Style for video in list watch next */
+.watch-next-video{
+    width: 100%;
+    border-radius: 8px 8px 0 0 ;
+}
+/* Style for container of name and description of watch next video*/
+.watch-next-element-name-description-container{
+    background-color: #154c79;
+    color: #FFF;
+    font-family: 'Roboto', 'Roboto Light', sans-serif;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*Name of video*/
+.watch-next-element-name{
+    height: auto;
+    padding: 5px;    
+    /*Text styles*/
+    --font-size: 18px;
+    font-size: var(--font-size);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: calc(var(--font-size) - 2px);    
+}
+/*Description of video*/
+.watch-next-element-description{
+    height: auto;
+    padding: 5px;
+    max-width: 100%;
+    --font-size: 12px;
+    font-size: var(--font-size);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: calc(var(--font-size) + 1px);
+}
+
+/*Styles for center section with main embedded video*/
+/*VIDEO SECTION STYLES*/
+/*Styles for whole section*/
+.video-section{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 5;
+}
+.video-and-name-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Styles for video container*/
+.video{
+    
+    width: 98%;
+    display: flex;
+    margin-top: 1%;
+    
+}
+/*Styles for video itself*/
+.current-video{
+    --aspect-height: 9;
+    --aspect-width: 16;
+    
+    height: calc(60vw * (var(--aspect-height) / var(--aspect-width)));
+    border: 0;
+    flex-grow: 1;
+    border-radius: 10px 10px 0 0;
+    
+    
+}
+/*Styles for video's name and desc*/
+.video-name-description{
+    background-color: #154c79;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 1% 1% 1%;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+    align-self: flex-start;
+    font-family: 'Roboto', 'Roboto Light', sans-serif;
+    color: #fffd;
+}
+
+.video-name{
+    margin: 0;
+    padding: 2px;
+}
+
+.video-description{
+    margin: 0;
+    padding: 10px;
+}
+/*COMMENTS SECTION STYLES*/
+
+/*Comments Styles*/
+.comments{
+    width: 98%;
+    & img {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        flex-grow: 0;
+        border: 1px solid white;
+    }
+}
+.comment-add{
+    background-color: #FFFFFF80;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px 0 grey;
+    & label{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+    }
+    & textarea{
+        padding: 5px;
+        flex-grow: 1;
+        height: 40px;
+        background: linear-gradient(
+                #6661,
+                #6664
+        );
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 5px;
+        word-break: break-word;
+        resize: none;
+        color: #111d;
+        
+    }
+    & textarea::selection{
+        border-color: red;
+    }
+    & input[type=submit]{
+        align-self: flex-end;
+        background-color: #aaa8;
+        border-radius: 20px;
+        height: 42px;
+        border: 1px solid white;
+        color: white;
+        margin: 5px 5px 5px 0;
+    }
+    display: flex;
+    justify-content: space-between;
+}
+.comments-list{
+    font-family: 'Roboto', 'Roboto Light', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.single-comment-container{
+    background-color: #FFFFFF80;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    box-shadow: 1px 1px 5px 0 grey;
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+.user-name-in-comment{
+    margin: 5px;
+}
+.user-name-text-in-comment{
+    flex-grow: 1;
+}
+.text-in-comment{
+    margin: 5px;
+}
+
+
+/*Scrollbars customization*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 1px 1px 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaffff80;
+    box-shadow: inset -1px -1px 5px grey;
+    border-radius: 10px;
+}
